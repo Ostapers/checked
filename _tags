@@ -1,0 +1,6 @@
+"pa_checked.ml": package(camlp5), pp(camlp5o)
+"lib/checked.ml": package(typeutil)
+true: verbose
+
+<test/*.ml>: use_pa_log, use_pa_checked, use_checked, package(typeutil), package(logger.syntax)
+<test/test*.byte>: use_checked

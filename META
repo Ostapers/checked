@@ -1,0 +1,16 @@
+version = "0.3"
+description = "Yet another exception monad"
+#requires = "unix bigarray num"
+archive(byte) = "checked.cma"
+archive(byte, plugin) = "checked.cma"
+archive(native) = "checked.cmxa"
+exists_if = "checked.cma"
+
+package "syntax" (
+ version = "0.4"
+ description = "Syntax extension for checked"
+ requires = "camlp5"
+ archive(syntax, preprocessor) = "pa_checked.cmo"
+ archive(syntax, toploop) = "pa_checked.cmo"
+)
+
