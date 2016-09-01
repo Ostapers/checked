@@ -1,8 +1,10 @@
 opam-version: "1.2"
+version: "0.3.1+git"
 authors: "dboulytchev@gmail.com"
 maintainer: "kakadu.hafanana@gmail.com"
 homepage: "http://oops.math.spbu.ru/projects/checked"
 dev-repo: "https://github.com/Ostapers/checked.git"
+bug-reports: "https://github.com/Ostapers/checked/issues"
 
 build: [
 	[make]
@@ -18,6 +20,7 @@ depends: [
   "typeutil" 
   "camlp5"
   "ocamlfind"
+  "ocamlbuild" {build}
 ]
 
 
